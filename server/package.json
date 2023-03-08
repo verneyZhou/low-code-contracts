@@ -1,0 +1,38 @@
+{
+  "name": "contract-deploy-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "publish": "pm2 start pm2.config.js",
+    "list": "pm2 list | pm2 ls",
+    "stop": "pm2 stop contractNode",
+    "reload": "pm2 reload contractNode",
+    "log": "pm2 logs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.6",
+    "express": "^4.18.2",
+    "pm2": "^5.2.2",
+    "socket.io": "^4.5.4"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.8.1",
+    "body-parser": "^1.20.1",
+    "chalk": "^2.4.2",
+    "fs-extra": "^11.1.0",
+    "inquirer": "^7.3.3",
+    "install": "^0.13.0",
+    "node-ssh": "^6.0.0",
+    "ora": "^4.1.1",
+    "shelljs": "^0.8.5",
+    "solc": "^0.8.17",
+    "truffle-hdwallet-provider": "0.0.3",
+    "ts-node": "^10.9.1",
+    "web3": "^1.8.1"
+  }
+}
